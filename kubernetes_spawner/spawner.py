@@ -52,6 +52,8 @@ class KubernetesSpawner(Spawner):
             """
         )
     )
+    
+    start_timeout = Int(60, config=True)
 
     hub_ip = Unicode(
         "",
